@@ -11,7 +11,7 @@ h1 {
     display: block;
 }
 h1:hover {
-    color: hotpink;
+    color: brown;
     text-align: center;
     width: 100%;
     display: block;
@@ -27,7 +27,7 @@ a {
     border-radius: 10px;
 	display: block;
     width: 20%;
-    box-shadow: 8px 8px brown;
+    box-shadow: 8px 8px black;
 }
 .assign img {
     width: 200px;
