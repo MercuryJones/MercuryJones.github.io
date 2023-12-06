@@ -5,7 +5,7 @@ body {
     flex-wrap: wrap;
 }
 h1 {
-    color: maroon;
+    color: black;
     text-align: center;
     width: 100%;
     display: block;
@@ -37,5 +37,5 @@ a {
 .assign img:hover {
     width: 200px;
     margin: 10px;
-    border: 2px dotted yellow;
+    border: 2px dotted blue;
 }
