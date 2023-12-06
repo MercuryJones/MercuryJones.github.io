@@ -1,5 +1,5 @@
 body {
-    background-color: #AFFF16;
+    background-color: #22B056;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +21,7 @@ a {
     color: black;
 }
 .assign {
-    background-color: grey;
+    background-color: #FFFFFF;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
