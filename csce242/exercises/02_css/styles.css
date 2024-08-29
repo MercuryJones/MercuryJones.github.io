@@ -1,0 +1,55 @@
+
+body {
+    background: seagreen;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#content{
+    background-color: beige;
+    padding:5px;
+    margin: 15px auto;
+    width: 50%;
+    border-radius: 10px;
+    border: 5px solid green;
+}
+#choice{
+    border: 5px solid black;
+}
+
+/* Navigation */
+
+#main-nav a {
+    text-decoration: none;  /* no underlines*/
+    background-color: plum;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 7px;
+
+}
+
+#main-nav a:hover{
+    background: black;
+    color: plum;
+}
+
+#main-nav li {
+    list-style-type: none;  /* no bullets */
+    display: inline-block; /* appears on one line*/
+}
+
+#main-nav ul {
+    padding-left: 0; /* remove indent(left padding)*/
+    width: fit-content;
+    margin: auto;
+}
+
+
+
+h1 {
+    color: red;
+}
+
+p {
+    color: blue;
+}
