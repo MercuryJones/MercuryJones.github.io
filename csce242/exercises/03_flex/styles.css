@@ -1,0 +1,97 @@
+/* Stucture */
+body {
+    background: url("images/kelp_background.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width:95%;
+    margin:auto;
+    background:rgba(255,255,255,.675);
+    border-radius:7px;
+
+}
+#species section {
+    background: lightgreen;
+    padding: 5px;
+    margin: 5px;
+}
+
+#main_header {
+    background-color: #37553C;
+    border-radius:5px;
+
+
+}
+#main_footer {
+    background-color: #4CACB4;
+
+}
+/* Navigation */
+#main_nav ul {
+    padding-left: 0;
+}
+#main_nav li {
+    list-style: none;
+    border-bottom: 2px solid black;
+
+}
+#main_nav a {
+    text-decoration: none;
+    padding:5px;
+    background: turquoise;
+    color: black;
+    display:block;
+}
+
+#main_aside {
+    background: gray;
+}
+
+#news section {
+    background: lightseagreen;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Typography */
+#main_footer p {
+    text-align: center;
+
+}
+
+/* Media Queries */
+@media only screen and (min-width: 600px) {
+    .columns{
+        display:flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 2;
+
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    #main_nav li {
+        flex: 1;
+    }
+}
+
+/*Applies to 768px and larger */
+@media only screen and (min-width: 768px) {
+
+}
