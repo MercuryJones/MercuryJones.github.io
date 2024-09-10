@@ -1,0 +1,131 @@
+/* Structure*/
+:root {
+    --main-background-color: blanchedalmond;
+    --gallery-back: aliceblue;
+    --ball-background: orange;
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background-color: paleturquoise;
+}
+
+.columns-all {
+    display:flex;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+#main_header {
+    position: relative;
+}
+#main_logo {
+    margin-right: 15px;
+}
+
+/* Login Menu*/
+#login_menu {
+    width: fit-content;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+#login_menu ul {
+    display: none;
+    padding-left: 0;
+}
+
+#login_menu li {
+    list-style-type:none;
+    padding: 5px;
+}
+
+#login_menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#login_menu a:hover {
+    background-color: antiquewhite;
+    color: green;
+}
+
+#gallery section {
+    background-color: var(--gallery-back);
+    padding: 10px;
+    margin:10px;
+}
+
+#ball {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background: var(--ball-background);
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes bounce {
+    0%{
+        background: green;
+        top: 0px;
+    }
+    25%{
+        background: blue;
+        
+    }
+    50%{
+        background: yellow;
+        top: 50px;
+        
+    }
+    75%{
+        background: red;
+    }
+    100%{
+        background: black;
+        top: 0px;
+    }
+}
+
+/*Larger Resoutions*/
+
+@media only screen and (min-width: 600px) {
+    #content {
+        width:70%;
+        margin: auto;
+    }
+    .columns{
+        display:flex;
+    }
+
+    #settings {
+        display:none;
+    }
+
+    #login_menu ul {
+        display: flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    #gallery {
+        flex-wrap: wrap;
+    }
+
+    #gallery section {
+        flex:25%;
+    }
+}

@@ -18,7 +18,6 @@ body {
     text-align: center;
 }
 
-
 #links a {
     list-style: none;
     text-decoration: none;
@@ -48,6 +47,48 @@ body {
     padding: 5px;
     text-align: center;
 }
+
+#links img {
+    max-width: 100%;
+}
+
+#projectlinks a {
+    list-style: none;
+    text-decoration: none;
+    background-color: sandybrown;
+    color: darkblue;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 7px;
+    width: 100%;
+}
+
+#projectlinks li {
+    list-style: none;
+    display: inline-block;
+    
+}
+
+#projectlinks ul {
+    padding-left: 0; /* remove indent(left padding)*/
+    width: auto;
+    margin: auto;
+}
+
+#projectlinks section {
+    background: whitesmoke;
+    border-radius: 7px;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+    
+    
+}
+
+#projectlinks img {
+    max-width: 100%;
+}
+
 
 @media only screen and (min-width:768px){
 
