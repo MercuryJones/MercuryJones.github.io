@@ -46,6 +46,7 @@ body {
     margin: 15px;
     padding: 5px;
     text-align: center;
+    width: 100%;
 }
 
 #links img {
@@ -81,12 +82,15 @@ body {
     margin: 15px;
     padding: 5px;
     text-align: center;
-    
-    
+    width: 100%;
 }
 
 #projectlinks img {
     max-width: 100%;
+}
+
+#project-title {
+    text-align: center;
 }
 
 

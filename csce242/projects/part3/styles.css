@@ -1,4 +1,129 @@
-/*root {
+   html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F0FFF0;
+    text-align: center;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Main content will expand to fill the remaining space */
+  main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #D3FFBA;
+    padding: 20px;
+  }
+  
+  nav {
+    margin-bottom: 30px;
+  }
+  
+  nav a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #8BC34A;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #D3FFBA;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #8BC34A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .pricing-card {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #8BC34A;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .qr {
+    margin: 20px;
+  }
+  
+  input {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
 
-}
-*/
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Three columns: left, center, right */
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+  }
+  
+  .left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left img, .right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #D3FFBA;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  
