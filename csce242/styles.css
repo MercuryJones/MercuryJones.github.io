@@ -72,7 +72,7 @@ body {
 
 #projectlinks ul {
     padding-left: 0; /* remove indent(left padding)*/
-    width: auto;
+    width: fit-content;
     margin: auto;
 }
 
@@ -83,6 +83,7 @@ body {
     padding: 5px;
     text-align: center;
     width: 100%;
+    align-items: center;
 }
 
 #projectlinks img {
