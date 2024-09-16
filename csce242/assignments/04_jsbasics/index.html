@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Column Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="main-title"> Assignment 7</h1>
+    <h3 id="title-des"> Introduction to Javascript</h3>
+    <div class="container">
+        <!-- Column 1 -->
+        <div class="column" id="countColumn">
+            <h2>Count</h2>
+            <div id="count" class="counter" onclick="incrementCount()">0</div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="column" id="imageColumn">
+            <h2>Random Image</h2>
+            <img id="randomImage" src="https://picsum.photos/200" alt="Random Image" onclick="refreshImage()">
+        </div>
+
+        <!-- Column 3 -->
+        <div class="column" id="sliderColumn">
+            <h2>Slider Move</h2>
+            <div class="slider-container">
+                <div id="movingSquare" class="draggable"></div>
+                <div id="largerSquare"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

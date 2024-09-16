@@ -1,0 +1,124 @@
+:root {
+    --main-background-color: beige;
+    --clicker-color: seagreen;
+    --columns-color: tan;
+    --border-color: black;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--main-background-color);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+#main-title {
+    text-align: center;
+    color: var(--clicker-color);
+}
+
+#title-des {
+    text-align: center;
+    color: var(--border-color);
+}
+
+.column {
+    flex: 1;
+    min-width: 280px;
+    max-width: 33%;
+    box-sizing: border-box;
+    background-color: var(--columns-color);
+    border-color: var(--border-color);
+    border-width: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.counter {
+    font-size: 3rem; /* Increase font size to match image size */
+    width: 100%; /* Set width to match image width */
+    height: 100%; /* Set height to match image height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clicker-color);
+    color: var(--columns-color);
+    border-radius: 15px;
+    border-color: var(--border-color);
+    cursor: pointer;
+}
+
+#randomImage {
+    width: 200px; /* Set width */
+    height: 200px; /* Set height */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 50px; /* Adjust height to fit the squares */
+    background-color: #f0f0f0; /* Optional: for better visibility */
+    border-radius: 8px; /* Optional: for rounded corners */
+}
+
+#movingSquare {
+    width: 50px;
+    height: 50px;
+    background-color: #28a745;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    transition: left 0.2s ease; /* Smooth transition effect */
+}
+
+#largerSquare {
+    width: 100%;
+    height: 20px;
+    background-color: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+input[type="range"] {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0; /* Hide the slider bar */
+    cursor: pointer; /* Show pointer cursor on hover */
+    pointer-events: none; /* Prevent interaction with the range input */
+}
+
+.draggable {
+    cursor: grab;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+@media (max-width: 768px) {
+    .column {
+        max-width: 100%;
+    }
+}
