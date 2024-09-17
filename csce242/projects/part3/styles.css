@@ -1,9 +1,24 @@
-   html, body {
+  :root {
+    --background-color: #F0FFF0;
+    --header-footer-bg-color: #D3FFBA;
+    --nav-link-bg-color: #8BC34A;
+    --white-color: #FFFFFF;
+    --button-bg-color: #8BC34A;
+    --button-hover-bg-color: #7AA92E;
+    --button-text-color: #FFFFFF;
+    --form-border-color: #ccc;
+    --light-background-color: #f9f9f9;
+    --transparent-white: rgba(255, 255, 255, 0.8);
+    --section-bg-color: rgba(255, 255, 255, 0.9);
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #F0FFF0;
+    background-color: var(--background-color);
     text-align: center;
   }
   
@@ -13,7 +28,6 @@
     justify-content: space-between;
   }
   
-  /* Main content will expand to fill the remaining space */
   main {
     flex: 1;
     padding: 20px;
@@ -21,7 +35,7 @@
   }
   
   header {
-    background-color: #D3FFBA;
+    background-color: var(--header-footer-bg-color);
     padding: 20px;
   }
   
@@ -34,13 +48,13 @@
     margin: 0 10px;
     padding: 10px 20px;
     text-decoration: none;
-    background-color: #8BC34A;
-    color: white;
+    background-color: var(--nav-link-bg-color);
+    color: var(--button-text-color);
     border-radius: 5px;
   }
   
   footer {
-    background-color: #D3FFBA;
+    background-color: var(--header-footer-bg-color);
     padding: 20px;
     text-align: center;
     position: relative;
@@ -48,29 +62,64 @@
   }
   
   button {
-    background-color: #8BC34A;
-    color: white;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
   }
   
+  #member-header {
+    color: var(--background-color);
+  }
+  
+  #story-background {
+    background-image: url(images/farm.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #member-background {
+    background-image: url(images/members.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .circle {
-    width: 200px;
-    height: 200px;
-    background-color: white;
+    width: 300px;
+    height: 300px;
+    background-color: var(--transparent-white);
     border-radius: 50%;
     display: inline-block;
     margin: 20px;
     padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px 4px 8px var(--box-shadow-color);
+  }
+  
+  .circle h3 {
+    font-size: 1.5em;
+  }
+  
+  .circle p {
+    font-size: 1em;
   }
   
   .pricing-card {
     display: inline-block;
-    background-color: white;
+    background-color: var(--white-color);
     padding: 20px;
     margin: 10px;
-    border: 1px solid #8BC34A;
+    border: 1px solid var(--nav-link-bg-color);
     width: 200px;
     text-align: center;
   }
@@ -94,11 +143,11 @@
     width: 50px;
     height: 50px;
   }
-
-main {
+  
+  main {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /* Three columns: left, center, right */
-    gap: 20px; /* Space between columns */
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
     padding: 20px;
   }
   
@@ -118,12 +167,122 @@ main {
     text-align: center;
   }
   
+  #shop-items {
+    text-align: center;
+  }
+  
+  .centered-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+  }
+  
+  .centered-main section {
+    text-align: center;
+    background-color: var(--section-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px var(--box-shadow-color);
+  }
+  
+  .centered-main img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #items-button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
   footer {
-    background-color: #D3FFBA;
+    background-color: var(--header-footer-bg-color);
     padding: 20px;
     text-align: center;
     width: 100%;
     position: relative;
   }
+
+  #shop-section {
+    background-color: var(--button-bg-color);
+    padding: 20px; 
+    display: inline-block; 
+    margin: 20px auto; 
+    border-radius: 10px;
+  }
+
+  /*Contact Section */
+#main-contact {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+.contact-section {
+    background-color: var(--light-background-color); 
+    padding: 30px; 
+    margin: 20px auto; 
+    border-radius: 8px; 
+    max-width: 600px; 
+    width: 100%; 
+    text-align: center;
+  }
   
+  /* Form styling */
+  .contact-form {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: 1px solid var(--form-border-color); 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+  }
+  
+  .contact-form button {
+    background-color: var(--button-bg-color); 
+    color: var(--button-text-color); 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .contact-form button:hover {
+    background-color: var(--button-hover-bg-color);
+  }
+  
+  /* Contact Details Styling */
+  .contact-details {
+    font-size: 1.1em;
+    margin-top: 20px;
+  }
+  
+  .contact-details a {
+    color: var(--nav-link-bg-color); 
+    text-decoration: none;
+  }
+  
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
   

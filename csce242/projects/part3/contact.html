@@ -8,6 +8,11 @@
 
 <header>
   <h1>Jolly Pond Farmacy</h1>
+  <div class="logo">
+    <a href="login.html">
+      <img src="images/blue-logo.png" alt="Login">
+    </a>
+  </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="our-story.html">Our Story</a>
@@ -17,17 +22,36 @@
   </nav>
 </header>
 
-<section>
-  <div class="qr">
-    <img src="qr-code.png" alt="QR code to Instagram" />
-  </div>
-  <p>Email us: blank@gmail.com</p>
-  <p>Call us: 888-888-8888</p>
-</section>
+<main id ="main-contact">
+  <section class="contact-section">
+    <h2>Contact Us</h2>
 
+    <!-- Simple Contact form -->
+    <div class="contact-form">
+      <form action="submit_form.php" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Simple Contact details -->
+    <div class="contact-details">
+      <p>Email: <a href="mailto:blank@gmail.com">blank@gmail.com</a></p>
+      <p>Phone: <a href="tel:+18888888888">888-888-8888</a></p>
+    </div>
+  </section>
+</main>
 <footer>
   <p>© 2024 Jolly Pond Farmacy</p>
 </footer>
-
 </body>
 </html>
+
