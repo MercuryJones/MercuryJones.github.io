@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Assignment 8</h1>
+        <h2>If Statements</h2>
+    </header>
+
+    <nav id="menu">
+        <ul id="menu-items">
+            <li><a href="#exercise1">Exercise 1</a></li>
+            <li><a href="#exercise2">Exercise 2</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="exercise1" class="exercise">
+            <h3>Color Slider</h3>
+            <input type="range" id="color-slider" min="0" max="255">
+            <p id="color-message"></p>
+        </section>
+
+        <section id="exercise2" class="exercise">
+            <h3>Picture Chooser</h3>
+            <button data-size="200">Small</button>
+            <button data-size="400">Medium</button>
+            <button data-size="600">Large</button>
+            <div id="image-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        @mercuryjones
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
