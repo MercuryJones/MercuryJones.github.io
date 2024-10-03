@@ -1,0 +1,75 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #000;
+    --button-bg: #4CAF50;
+    --button-hover-bg: #45a049;
+    --error-color: red;
+    --star-color: yellow;
+    --canvas-bg: black;
+    --canvas-border: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.error {
+    color: var(--error-color);
+    display: none;
+    margin-top: 10px;
+}
+
+.star-canvas {
+    background-color: var(--canvas-bg);
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    position: relative;
+    border: 2px solid var(--canvas-border);
+}
+
+.star {
+    color: var(--star-color);
+    font-size: 16px;
+    position: absolute;
+}
+
+#message-box {
+    font-size: 16px;
+    color: green;
+    margin-top: 10px;
+}
