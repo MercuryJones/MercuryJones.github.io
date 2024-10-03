@@ -1,117 +1,3 @@
-/* 
-body {
-    background: beige;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#top_heading {
-    color:darkblue;
-    text-align: center;
-}
-#content {
-    background-color: sandybrown;
-    padding:5px;
-    margin: 15px auto;
-    width: 50%;
-    border-radius: 10px;
-    border: 5px solid darkblue;
-    color:darkblue;
-    text-align: center;
-}
-
-#links a {
-    list-style: none;
-    text-decoration: none;
-    background-color: sandybrown;
-    color: darkblue;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 7px;
-}
-
-#links li {
-    list-style: none;
-    display: inline-block;
-    
-}
-
-#links ul {
-    padding-left: 0; 
-    width: fit-content;
-    margin: auto;
-}
-
-#links section {
-    background: whitesmoke;
-    border-radius: 7px;
-    margin: 15px;
-    padding: 5px;
-    text-align: center;
-    width: 100%;
-}
-
-#links img {
-    max-width: 100%;
-}
-
-#projectlinks a {
-    list-style: none;
-    text-decoration: none;
-    background-color: sandybrown;
-    color: darkblue;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 7px;
-    width: 100%;
-}
-
-#projectlinks li {
-    list-style: none;
-    display: inline-block;
-    
-}
-
-#projectlinks ul {
-    padding-left: 0; 
-    width: fit-content;
-    margin: auto;
-}
-
-#projectlinks section {
-    background: whitesmoke;
-    border-radius: 7px;
-    margin: 15px;
-    padding: 5px;
-    text-align: center;
-    width: 100%;
-    align-items: center;
-}
-
-#projectlinks img {
-    max-width: 100%;
-}
-
-#project-title {
-    text-align: center;
-}
-
-
-@media only screen and (min-width:768px){
-
-    .columns{
-
-        display:flex;
-
-    }
-
- 
-
-    .one{
-
-        flex:1;
-
-    }
-} */
-
 body {
     background: beige;
     font-family: Arial, Helvetica, sans-serif;
@@ -135,7 +21,7 @@ body {
 
 #links, #projectlinks {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping into multiple rows */
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -145,18 +31,18 @@ body {
     margin: 15px;
     padding: 10px;
     text-align: center;
-    width: 30%; /* To ensure three items per row */
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
-    border: 2px solid darkblue; /* Adds border around each assignment box */
+    width: 30%;
+    box-sizing: border-box; 
+    border: 2px solid darkblue; 
 }
 
 #links img, #projectlinks img {
-    width: 350px; /* Increased size of the images */
-    height: auto; /* Maintain aspect ratio */
+    width: 350px; 
+    height: auto; 
     margin: auto;
     display: block;
-    border: 2px solid sandybrown; /* Optional: Adds a border around the images */
-    border-radius: 5px; /* Optional: Adds rounded corners to the images */
+    border: 2px solid sandybrown; 
+    border-radius: 5px; 
 }
 
 #links ul, #projectlinks ul {
@@ -186,6 +72,6 @@ body {
 
 @media only screen and (max-width: 768px) {
     #links section, #projectlinks section {
-        width: 100%; /* Full width on smaller screens */
+        width: 100%; 
     }
 }
