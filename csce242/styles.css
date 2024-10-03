@@ -1,4 +1,4 @@
-
+/* 
 body {
     background: beige;
     font-family: Arial, Helvetica, sans-serif;
@@ -35,7 +35,7 @@ body {
 }
 
 #links ul {
-    padding-left: 0; /* remove indent(left padding)*/
+    padding-left: 0; 
     width: fit-content;
     margin: auto;
 }
@@ -71,7 +71,7 @@ body {
 }
 
 #projectlinks ul {
-    padding-left: 0; /* remove indent(left padding)*/
+    padding-left: 0; 
     width: fit-content;
     margin: auto;
 }
@@ -109,5 +109,83 @@ body {
 
         flex:1;
 
+    }
+} */
+
+body {
+    background: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#top_heading {
+    color: darkblue;
+    text-align: center;
+}
+
+#content {
+    background-color: sandybrown;
+    padding: 5px;
+    margin: 15px auto;
+    width: 50%;
+    border-radius: 10px;
+    border: 5px solid darkblue;
+    color: darkblue;
+    text-align: center;
+}
+
+#links, #projectlinks {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping into multiple rows */
+    justify-content: center;
+}
+
+#links section, #projectlinks section {
+    background: whitesmoke;
+    border-radius: 7px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 30%; /* To ensure three items per row */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    border: 2px solid darkblue; /* Adds border around each assignment box */
+}
+
+#links img, #projectlinks img {
+    width: 350px; /* Increased size of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: auto;
+    display: block;
+    border: 2px solid sandybrown; /* Optional: Adds a border around the images */
+    border-radius: 5px; /* Optional: Adds rounded corners to the images */
+}
+
+#links ul, #projectlinks ul {
+    padding-left: 0;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+#links li, #projectlinks li {
+    list-style: none;
+    display: inline-block;
+}
+
+#links a, #projectlinks a {
+    text-decoration: none;
+    background-color: sandybrown;
+    color: darkblue;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+#project-title {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    #links section, #projectlinks section {
+        width: 100%; /* Full width on smaller screens */
     }
 }
