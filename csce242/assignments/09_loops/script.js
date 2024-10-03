@@ -18,7 +18,7 @@ document.getElementById('draw-stars').addEventListener('click', () => {
     
     for (let i = 1; i <= starCount; i++) {
         const star = document.createElement('span');
-        star.innerHTML = '&#9733;'; // Unicode for star symbol
+        star.innerHTML = '&#9733;';
         star.classList.add('star');
 
         // Randomly position the star within the canvas bounds
