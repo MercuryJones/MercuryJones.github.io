@@ -1,0 +1,45 @@
+/* Structure */
+
+body {
+    background: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background: forestgreen;
+    border: 1px solid ivory;
+    padding: 5px;
+    margin: 10px 0; /* 10 px top/bottom, 0 px right/left */
+}
+
+#main-content {
+    background: ivory;
+    border: 1px solid forestgreen;
+    padding: 5px;
+}
+
+/* Navigation */
+
+#assignment-nav li {
+    display: inline-block;
+}
+
+#assignment-nav a {
+    text-decoration: none;
+    background-color: forestgreen;
+    color: ivory;
+    padding: 5px;
+    border-radius: 7px; /* rounded corners */
+
+}
+
+#assignment-nav a:hover {
+    background-color: lightgreen;
+    color:forestgreen;
+}
+
+/* Typography */
+header h1, header h2, footer p {
+    text-align: center;
+}
+
