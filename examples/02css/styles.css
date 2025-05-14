@@ -1,0 +1,72 @@
+/* Structure */
+
+body {
+    background: url(images/bground.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width: 80%;
+    margin: auto;
+}
+
+header, footer {
+    background: sandybrown;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 10px 0; /* 10 px top/bottom, 0 px right/left */
+}
+
+#main-content {
+    background: ivory;
+    border: 1px solid sandybrown;
+    padding: 5px;
+}
+
+/* Picture Sections */
+
+.giraffe-pic {
+    background-color: sandybrown;
+    text-align: center;
+    width: 50%;
+    margin: 10px auto 20px;
+    padding: 20px 5px 10px;
+    border-radius: 7px;
+    color: ivory;
+    box-shadow: 5px 5px grey;
+}
+
+
+
+/* Navigation */
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    
+    
+}
+
+#main-nav li {
+    display: inline-block;
+}
+
+#main-nav a {
+    text-decoration: none;
+    background-color: skyblue;
+    color: ivory;
+    padding: 5px;
+    border-radius: 7px; /* rounded corners */
+
+}
+
+#main-nav a:hover {
+    background-color: white;
+    color:black;
+}
+
+/* Typography */
+header h1, header h2, footer p {
+    text-align: center;
+}
+
