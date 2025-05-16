@@ -1,0 +1,146 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #591C21;
+
+}
+
+#content {
+
+}
+
+#main-content h2 {
+    text-align: center;
+}
+
+header, footer, .main-area {
+    padding: 5px;
+    margin: 10px 0px;
+    background: white;
+    border-radius: 5px;
+}
+
+.pic-area {
+    background: #8C1F28;
+    border: solid #044040;
+    border-width: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+aside {
+    background: #044040;
+    padding: 5px;
+    border-radius: 5px;
+    border: #D92525 solid;
+    color:antiquewhite;
+}
+
+.pic-area img {
+    display:block;
+    margin:auto;
+}
+
+.pic-area h2 {
+    text-align: center;
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+}
+
+/* Gallery */
+
+#gallery section {
+    background-color: #D92525;
+    color: antiquewhite;
+    border-radius: 5px;
+    padding: 5px;
+    border: #591C21 solid;
+
+}
+
+
+/* Navigation */
+
+
+
+/* Typography */
+
+
+
+
+/* Media Queries */
+
+/* Portrait Tablet */
+@media screen and (min-width: 600px) {
+    body {
+        background-color: blanchedalmond;
+    }
+}
+
+/* Landscape Tablet */
+@media screen and (min-width: 768px) {
+    header, footer, .main-area {
+        width: 85%;
+        margin: 10px auto;
+    }
+
+    .pic-area {
+        margin: 0 8px 8px;
+    }
+
+    /* Columns */
+    .columns {
+        display:flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
+    #gallery {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    #gallery section {
+        max-width: 25%;
+        margin: 10px 0;
+    }
+}
+
+/* Labtop / Desktop */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: #044040;
+    }
+
+    header, footer, .main-area {
+        width: 70%;
+    }
+    .pic-area {
+        justify-content: center;
+    }
+}
+
+/* Extra Large Devices */
+@media screen and (min-width: 1600px) {
+    
+}

@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Main Page </title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CSCE 242: WEB APPLICATIONS</h1>
+        <h2>Page Created By: John Hatch</h2>
+        <p>This class is focused on mastering the skills for front end development using html and css code. We will also be learning how to utilize javascript so that we can add connections and functions to our webpages. Finally this class will also teach server side development for our websites.</p>
+    </header>
 
-        <header>
-        <h1> CSCE 242: WEB APPLICATIONS </h1>
-        <h2> Page Created By: John Hatch </h2>
-        <p> This class is focused on mastering the skills for front end development using html and css code. We will also be learning how to utilize javascript so that we can add connections and functions to our webpages. Finally this class will also teach server side development for our websites. </p>
-        </header>
-
-        <main>
-
-            <div id="main-content">
-                <h2> Assignments </h2>
-                <nav id="assignment-nav">
-                    <ul>
-                        <li><a href="assignments/assignment02/index.html"> Basic Html </a> </li>
-                        <li><a href="assignments/assignment03/index.html"> Basic CSS </a> </li>
-                    </ul>
-                </nav>
+    <main>
+        <h2 class="section-title">Assignments</h2>
+        <div class="assignment-grid">
+            <div class="assignment-card">
+                <img src="images/berger.png" alt="Assignment 1 Screenshot">
+                <h3>Assignment 1: Basic HTML</h3>
+                <p>We practiced writing HTML to build a basic structured page using headings, paragraphs, lists, and links.</p>
+                <a href="assignments/assignment02/index.html">View Assignment</a>
             </div>
+            <div class="assignment-card">
+                <img src="images/sw.png" alt="Assignment 2 Screenshot">
+                <h3>Assignment 2: Basic CSS</h3>
+                <p>In this assignment, we applied CSS styling to enhance the visual layout of our HTML page with fonts, colors, and spacing.</p>
+                <a href="assignments/assignment03/index.html">View Assignment</a>
+            </div>
+        </div>
+    </main>
 
-        </main>
-       
-        <footer>
-            <p>&copy; MercuryJones </p>
-        </footer>
-    </body>
+    <footer>
+        <p>&copy; MercuryJones</p>
+    </footer>
+</body>
 </html>
