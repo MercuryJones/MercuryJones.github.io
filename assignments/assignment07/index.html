@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment 8</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Assignment 8</h1>
+    <h2>If Statements</h2>
+    <div id="toggle-nav">&#9660;</div>
+    <nav id="main-nav" class="hide">
+      <ul>
+        <li><a href="#" id="btn-ex1">Exercise 1</a></li>
+        <li><a href="#" id="btn-ex2">Exercise 2</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="exercise1">
+      <h3>Let's Speed</h3>
+      <input type="range" id="speed-range" min="1" max="10" value="5">
+      <div>
+        <button id="go-btn">Go</button>
+        <button id="stop-btn">Stop</button>
+      </div>
+      <div class="bike-box">
+        <img src="images/simpsons-homer.gif" id="bike" alt="bike">
+      </div>
+    </section>
+
+    <section id="exercise2" class="hidden">
+      <h3>CSS Art</h3>
+      <button class="art-btn" data-shape="moon">Moon</button>
+      <button class="art-btn" data-shape="star">Star</button>
+      <button class="art-btn" data-shape="cloud">Cloud</button>
+      <div id="art-display"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;MercuryJones</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
