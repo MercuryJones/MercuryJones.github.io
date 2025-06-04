@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mountainside Drive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>Mountainside Drive</h1>
+      <p>Welcome to our scenic road through beauty</p>
+    </div>
+  </section>
+
+  <section id="about" class="content-section">
+    <h2>About This Drive</h2>
+    <p>This stretch of road winds through lush mountains, tranquil forests, and scenic overlooks. A perfect blend of peace and adventure awaits around every curve.</p>
+  </section>
+
+  <section id="gallery" class="content-section">
+    <h2>Scenic Views</h2>
+    <div class="slideshow">
+      <img src="images/one.jpg" class="slide active" alt="Slide 1">
+      <img src="images/two.jpg" class="slide" alt="Slide 2">
+      <img src="images/three.jpg" class="slide" alt="Slide 3">
+      <img src="images/four.jpg" class="slide" alt="Slide 4">
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mountainside Drive</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
