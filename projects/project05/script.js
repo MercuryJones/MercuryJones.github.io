@@ -12,5 +12,4 @@ function changeSlide(step) {
   showSlide(currentSlide);
 }
 
-// Optional: auto-start with first image showing
 showSlide(currentSlide);
