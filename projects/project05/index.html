@@ -6,12 +6,15 @@
 </head>
 <body>
   <nav class="navbar">
-    <ul>
-      <li><a href="#intro">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
   </nav>
 
   <section id="intro" class="intro-banner">
@@ -38,7 +41,6 @@
     </div>
   </section>
 
-
   <section id="restaurants" class="content-section">
     <h2>Nearby Restaurants</h2>
     <div id="restaurant-list" class="restaurant-grid"></div>
@@ -63,7 +65,7 @@
     <p>&copy; 2025 Mountainside Drive</p>
   </footer>
 
-  <script src="script.js"></script>
-  <script src="restaurant-display.js"></script>
+  <script src="script.js" defer></script>
+  <script src="restaurant-display.js" defer></script>
 </body>
 </html>

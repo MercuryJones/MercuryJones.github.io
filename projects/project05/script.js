@@ -1,3 +1,4 @@
+// ==== Slideshow Logic ====
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 
@@ -13,3 +14,11 @@ function changeSlide(step) {
 }
 
 showSlide(currentSlide);
+
+
+const toggleMenu = () => {
+  const nav = document.getElementById("nav-links");
+  nav.classList.toggle("show");
+};
+
+window.toggleMenu = toggleMenu;
