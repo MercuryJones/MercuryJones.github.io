@@ -41,9 +41,8 @@ const getRestaurants = async () => {
       rating.innerText = `Rating: ${restaurant.rating}`;
       section.appendChild(rating);
   
-      const map = document.createElement("iframe");
-      map.src = getMap(restaurant.address);
-      section.appendChild(map);
+      // Add click listener to open modal
+      section.addEventListener("click", () => openModal(restaurant));
   
       container.appendChild(section);
     });
