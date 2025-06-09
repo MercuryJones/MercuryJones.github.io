@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mountainside Drive</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="intro" class="intro-banner">
+    <div class="intro-text">
+      <h1>Mountainside Drive</h1>
+      <p>Welcome to our scenic road through beauty</p>
+    </div>
+  </section>
+
+  <section id="about" class="content-section">
+    <h2>About Mountainside Drive & Property</h2>
+    <p>Nestled in the rolling foothills of the Blue Ridge Mountains, Mountainside Drive offers a one-of-a-kind scenic experience for visitors and residents alike. Wind through tranquil forest roads and sun-dappled overlooks before arriving at the heart of the property—a stunning lakeside retreat designed for both relaxation and adventure.</p>
+
+    <p>Our private 4-bedroom lakehouse combines rustic charm with modern luxury. Floor-to-ceiling windows reveal sweeping views of the water and mountains beyond, while the spacious outdoor deck invites you to gather with friends and family. Whether you seek serene mornings on the dock or lively evenings by the outdoor fireplace, Mountainside Drive provides an unforgettable escape.</p>
+
+    <p>From outdoor water sports to cozy fireside gatherings, this is your perfect destination to recharge, reconnect, and immerse yourself in the natural beauty of North Carolina’s landscape.</p>
+  </section>
+
+  <section id="gallery" class="content-section">
+    <h2>Scenic Views</h2>
+    <div class="slideshow">
+      <div class="slide active">
+        <img src="images/one.jpg" alt="Slide 1">
+        <p class="caption">Sunrise over the mountains</p>
+      </div>
+      <div class="slide">
+        <img src="images/two.jpg" alt="Slide 2">
+        <p class="caption">Midmorning sun on a brisk winter's day</p>
+      </div>
+      <div class="slide">
+        <img src="images/three.jpg" alt="Slide 3">
+        <p class="caption">Deck and property after a fresh hickory snowfall</p>
+      </div>
+      <div class="slide">
+        <img src="images/four.jpg" alt="Slide 4">
+        <p class="caption">Your everyday beauty on the lake</p>
+      </div>
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="restaurants" class="content-section">
+    <h2>Nearby Restaurants</h2>
+    <div id="restaurant-list" class="restaurant-grid"></div>
+  </section>
+
+  <section id="amenities" class="content-section">
+    <h2>Lakehouse Amenities</h2>
+    <div class="amenities-grid">
+      <div class="amenity-item">
+        <i class="fa-solid fa-umbrella-beach"></i>
+        <h3>Sun Loungers</h3>
+        <p>Relax on premium deck loungers under the Carolina sun.</p>
+      </div>
+      <div class="amenity-item">
+        <i class="fa-solid fa-water"></i>
+        <h3>Jet Skis & Paddleboards</h3>
+        <p>Gear provided for lake fun — just grab and go!</p>
+      </div>
+      <div class="amenity-item">
+        <i class="fa-solid fa-fire"></i>
+        <h3>Outdoor Fireplace</h3>
+        <p>Gather under the stars with warmth and conversation.</p>
+      </div>
+      <div class="amenity-item">
+        <i class="fa-solid fa-utensils"></i>
+        <h3>Outdoor Kitchen & Grill</h3>
+        <p>Fully equipped kitchen and grill for all dining.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 6342 Mountainside Drive</p>
+  </footer>
+
+
+  <div id="restaurant-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-cuisine"></p>
+      <p id="modal-address"></p>
+      <p id="modal-rating"></p>
+      <iframe id="modal-map" src="" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+  <script src="restaurant-display.js" defer></script>
+</body>
+</html>

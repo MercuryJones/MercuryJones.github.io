@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us - Mountainside Drive</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html#intro">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="content-section contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <form id="contact-form" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <!-- Success/Error messages -->
+        <p id="form-success" class="form-message success-message"></p>
+        <p id="form-error" class="form-message error-message"></p>
+      </form>
+
+      <!-- IFrame -->
+      <div class="contact-iframe">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.7272243663996!2d-81.34262652408978!3d35.73318942878101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88514e5021f0e81f%3A0xd405ab87d6e3faaa!2sHickory%2C%20NC!5e0!3m2!1sen!2sus!4v1717950880000!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 6342 Mountainside Drive</p>
+  </footer>
+
+  <!-- Modal for success message -->
+  <div id="form-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeFormModal()">&times;</span>
+      <h3>Thank you!</h3>
+      <p>Your message has been sent successfully.</p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
